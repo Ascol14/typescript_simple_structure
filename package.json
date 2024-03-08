@@ -1,0 +1,24 @@
+{
+  "name": "typescript_simple_structure",
+  "version": "1.0.0",
+  "description": "My personal typescript starting project",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest --verbose --watchAll",
+    "dev": "concurrently -k -n \"Typescript,Node\" -p \"[{name}]\" -c \"blue,green\" \"tsc -w\" \"nodemon ./dist/index.js\"",
+    "start": "node ./dist/index.js",
+    "build": "tsc"
+  },
+  "author": "Ascol57",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.25",
+    "concurrently": "^8.2.2",
+    "dts-gen": "^0.10.1",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.2"
+  }
+}
